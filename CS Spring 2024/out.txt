@@ -1,0 +1,3 @@
+The text from in.txt is 
+ Live long and Prosper  
+ and then some

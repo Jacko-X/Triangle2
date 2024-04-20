@@ -1,0 +1,36 @@
+***Main***
+
+The main function is the entry point for the program to execute, it also keeps the program organized by knowing where it starts. This function holds the program or can calls other functions for the program to execute. It can also return values and pass in inputs in the main parameters to learn more about this see main parameters. 
+
+
+The syntax of Main is 
+     return_type main()
+          {
+               printf("This a the syntax for Main!\n"); 
+          }
+
+Do you want to see an example type y for yes?
+
+***Main Examples***
+
+#include <stdio.h>
+
+void main(void)
+     {
+          printf("Hello!\n");
+     }
+
+The program above is a main function to start the execution of the code with no parameter passed in and a void return type. Inside of the main function is a print statement that prints Hello. The #include <stdio.h> is needed to use a print statement. 
+
+int main(void)
+     {
+          int x = 3;
+          return x;
+     }
+
+The program above is a main function with a return type of int so the return value of 0 indicated that the program was completed. No arguments are passed in but has a return value. 
+
+
+
+
+

@@ -1,0 +1,150 @@
+***Functions*** 
+
+Definition:
+Functions are blocks of code aimed to complete a specific task or group of related tasks. 
+
+Usage:
+Functions are used to break down a program into smaller, manageable parts. So each function can be developed, tested and debugged independently, which will overall make the program more organized and easier to understand. 
+
+Related: 
+Functions are located above main and they are called in main where the parameters are also passed in if the function needs it. 
+
+The syntax of Functions is
+     the syntax; 
+     return_type function_name(parameter_type parameter_name, parameter_type parameter_name)
+     {
+          //body of the function 
+
+     }
+	
+The syntax of calling Functions in main
+     the syntax; 
+     function_name(parameter_name, parameter_name);
+
+Do you want to see examples type y for yes?
+
+
+***Function Examples***
+
+There are four different types of function here are examples of the 4 types: 
+
+
+
+
+
+Examples below have NO parameters passed in and NO values returned
+
+Example 1:
+
+void function_1(void) // Function created
+     {
+          printf("Have a nice day!"); 
+     }
+
+void main(void)
+     {
+          function_1(); // Function call
+     }
+
+The program above calls the function_1 to print "Have a nice day!".
+
+Example 2:
+
+void function_11(void) // Function created
+     {
+          int a;
+          int b; 
+
+          printf("Enter a number:");
+          scanf("%d", &a);
+          printf("Enter a number:");
+          scanf("d", &b);
+
+          printf("%d + %d = %d", a, b, a+b);
+     }
+
+void main(void)
+     {
+          function_11(); // Function call
+     }
+
+This program above calls the function_11 to get two numbers from the user then prints out those numbers added together. Everything happens in the function_11.
+
+
+
+
+Examples below have No parameters passed in but HAS values returned
+
+int function_2(void) // Function created
+     {
+          int n;
+          
+          printf("Enter a integer: ");
+          scanf("%d", &n);
+          
+          return n;
+     }
+
+void main(void)
+     {
+          int a;
+
+          a = function_2(); // Function call
+          printf("The number you entered is %i.\n\n", a);
+     }
+
+The program above uses calls the function_2 to ask the user for a number, scans in that number then sends it to main. The returned value from function_2 is stored in the variable a which main prints out. 
+
+
+
+
+
+Examples below HAVE Parameters passed in but NO values returned
+
+void function_3(int c, int d) // Function created
+     {
+          int n;
+          
+          n = c * d;
+          
+          printf("%i * %i = %i.\n", c, d, n);
+     }
+
+void main(void)
+     {
+          int a = 1;
+          int b = 2;
+
+          function_3(a,b); // Function call
+     }
+
+This program above calls function_3 with the parameters and b to send the integers a and b from main to function_3. The function_3 recives the parameters sent in from main and changes the names of a and b to c and d. In function_3 it doesn't return any values but multiplies c and d and prints out the answer. 
+
+
+
+
+
+Examples below HAVE Parameters passed in and HAS values returned
+
+int function_4(int a, int b, int c)
+     {
+          int d;
+
+          d = (a + c) * b;
+
+          return d;
+     }
+
+void main(void)
+     {
+          printf("function_4 returns (10 + 4) * 2 which equals %i", function1(10,2,4)); 
+     }
+
+This program above uses a function to pass in parameters which this time are the number 10, 2, and 4 and changes stores them in the variables a, b, and c in function_4. In function_4 a and c are added together then multiplied by b which equals d. d is then returned to main where it is printed out. 
+
+
+
+
+
+
+
